@@ -10,6 +10,12 @@
 		F13BC5EF2C1DAA7E007FCE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13BC5EE2C1DAA7E007FCE3E /* AppDelegate.swift */; };
 		F13BC5F12C1DAA7E007FCE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13BC5F02C1DAA7E007FCE3E /* SceneDelegate.swift */; };
 		F13BC5F82C1DAA81007FCE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13BC5F72C1DAA81007FCE3E /* Assets.xcassets */; };
+		F19438BB2C6DF63700986BA4 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19438BA2C6DF63700986BA4 /* LaunchScreenView.swift */; };
+		F19438BE2C6DF81800986BA4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19438BD2C6DF81800986BA4 /* BaseView.swift */; };
+		F19438C02C6DF91A00986BA4 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19438BF2C6DF91A00986BA4 /* R.swift */; };
+		F19438C22C6E003D00986BA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19438C12C6E003D00986BA4 /* Constants.swift */; };
+		F1AF76172C6CF90200F3A7CD /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF76162C6CF90200F3A7CD /* LaunchScreenViewController.swift */; };
+		F1AF761B2C6CF99500F3A7CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AF761A2C6CF99500F3A7CD /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +24,12 @@
 		F13BC5F02C1DAA7E007FCE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F13BC5F72C1DAA81007FCE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13BC5FC2C1DAA81007FCE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19438BA2C6DF63700986BA4 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		F19438BD2C6DF81800986BA4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F19438BF2C6DF91A00986BA4 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		F19438C12C6E003D00986BA4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1AF76162C6CF90200F3A7CD /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		F1AF761A2C6CF99500F3A7CD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,14 @@
 			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
+		F19438BC2C6DF7FE00986BA4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F19438BD2C6DF81800986BA4 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		F1AF76082C6CEBA700F3A7CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +92,7 @@
 		F1AF76092C6CEBCC00F3A7CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F1AF76182C6CF97400F3A7CD /* Base */,
 				F1AF76152C6CF8CF00F3A7CD /* LaunchScreen */,
 				F1AF760F2C6CECFC00F3A7CD /* Characters */,
 				F1AF76132C6CF8A000F3A7CD /* CharacterDetail */,
@@ -82,6 +103,7 @@
 		F1AF760A2C6CEBDB00F3A7CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F19438BC2C6DF7FE00986BA4 /* Base */,
 				F1AF76142C6CF8C900F3A7CD /* LaunchScreen */,
 				F1AF76102C6CED0100F3A7CD /* Characters */,
 				F1AF76122C6CF89B00F3A7CD /* CharacterDetail */,
@@ -108,6 +130,8 @@
 			children = (
 				F13BC5F72C1DAA81007FCE3E /* Assets.xcassets */,
 				F13BC5FC2C1DAA81007FCE3E /* Info.plist */,
+				F19438BF2C6DF91A00986BA4 /* R.swift */,
+				F19438C12C6E003D00986BA4 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 		F1AF76142C6CF8C900F3A7CD /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F19438BA2C6DF63700986BA4 /* LaunchScreenView.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -166,8 +191,17 @@
 		F1AF76152C6CF8CF00F3A7CD /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F1AF76162C6CF90200F3A7CD /* LaunchScreenViewController.swift */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		F1AF76182C6CF97400F3A7CD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F1AF761A2C6CF99500F3A7CD /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +246,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uk,
 			);
 			mainGroup = F13BC5E22C1DAA7D007FCE3E;
 			productRefGroup = F13BC5EC2C1DAA7E007FCE3E /* Products */;
@@ -239,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19438BB2C6DF63700986BA4 /* LaunchScreenView.swift in Sources */,
+				F19438C02C6DF91A00986BA4 /* R.swift in Sources */,
 				F13BC5EF2C1DAA7E007FCE3E /* AppDelegate.swift in Sources */,
+				F1AF761B2C6CF99500F3A7CD /* BaseViewController.swift in Sources */,
+				F19438BE2C6DF81800986BA4 /* BaseView.swift in Sources */,
+				F1AF76172C6CF90200F3A7CD /* LaunchScreenViewController.swift in Sources */,
 				F13BC5F12C1DAA7E007FCE3E /* SceneDelegate.swift in Sources */,
+				F19438C22C6E003D00986BA4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +349,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -362,6 +405,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
