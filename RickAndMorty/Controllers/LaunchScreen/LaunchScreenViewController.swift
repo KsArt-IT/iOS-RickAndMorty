@@ -14,8 +14,18 @@ class LaunchScreenViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // спрячем кнопку навигации назад
+        navigationItem.hidesBackButton = true
+
+        gotoRoot()
     }
-    
+
+    private func gotoRoot() {
+        // отображать лаунц скрин несколько секунд
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) { [weak self] in
+            self?.navigationController?.popToRootViewController(animated: true)
+        }
+    }
 }
 
 extension LaunchScreenViewController {
@@ -25,6 +35,7 @@ extension LaunchScreenViewController {
 
         view.addSubview(logo)
     }
+
     override func constraintViews() {
         logo.translatesAutoresizingMaskIntoConstraints = false
 

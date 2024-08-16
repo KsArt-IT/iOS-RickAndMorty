@@ -11,14 +11,14 @@ final class LaunchScreenView: BaseView {
 
     private let logo: UIImageView = {
         let view = UIImageView()
-        view.image = R.Image.logo
+        view.image = R.Images.logo
         view.contentMode = .scaleAspectFill
         view.clipsToBounds = true
         return view
     }()
     private let launchScreen: UIImageView = {
         let view = UIImageView()
-        view.image = R.Image.launchScreen
+        view.image = R.Images.launchScreen
         view.contentMode = .scaleAspectFill
         view.clipsToBounds = true
         return view

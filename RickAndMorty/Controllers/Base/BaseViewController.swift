@@ -16,6 +16,7 @@ class BaseViewController: UIViewController {
         constraintViews()
         configureAppearance()
     }
+    
 }
 
 @objc extension BaseViewController {
